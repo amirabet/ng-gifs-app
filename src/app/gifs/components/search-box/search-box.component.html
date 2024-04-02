@@ -1,0 +1,24 @@
+<div *ngIf="hasApiKey()">
+    <h5>Search Gif:</h5>
+    <div class="input-group mb-3">
+        <input type="text"
+            class="form form-control"
+            placeholder="Type and press enter to search..."
+            (keyup.enter)="searchTag()"
+            #txtTagInput
+            >
+        <button class="btn btn-outline-danger" type="button" (click)="removeApiKey()">Clear API Key</button>
+      </div>
+   
+</div>
+
+<div *ngIf="!hasApiKey()">
+    <h5>Add an API Key from <a href="https://developers.giphy.com/" target="_blank">GIPHY</a>:</h5>
+    <input type="text"
+        class="form form-control"
+        placeholder="Enter your API key and press enter"
+        (keyup.enter)="addApiKey()"
+        #txtApiInput
+        >
+</div>
+
