@@ -9,7 +9,7 @@ import { Gif, SearchResponse } from '../interfaces/gifs.interfaces';
 export class GifsService {
 
   private _tagshistory: string[] = [];
-  private _giphyApiKey: string = ""; //Q5kbEHXpXGHTqIm5SUJq6lrjmoVxkvIT
+  private _giphyApiKey: string = "";
   private _urlService: string = "https://api.giphy.com/v1/gifs";
   private _gifsLimit: number = 15;
   private _localStorageHistoryKey: string = 'history';
