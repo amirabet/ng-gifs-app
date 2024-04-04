@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { GifsService } from '../../services/gifs.service.ts.service';
+import { GifsService } from '../../services/gifs.service';
 
 /*
 *
